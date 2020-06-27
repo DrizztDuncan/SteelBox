@@ -1,0 +1,17 @@
+nav {
+    height: 8vh;
+    color: white;
+    background: #000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+li {
+    margin: auto 2vh;
+}
