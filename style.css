@@ -2,4 +2,118 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fjalla one', sans-serif;
+}
+
+.grey {
+    color: grey;
+}
+
+.white {
+    color: white;
+}
+
+body {
+    /* overflow: scroll; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    height: 100vh;
+    background-image: url(./img/heroImg.jpg);
+    mix-blend-mode: exclusion;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    filter: brightness(.7);
+}
+
+.side {
+    background-color: black;
+    color: white;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bolder;
+    mix-blend-mode: multiply;
+    cursor: default;
+}
+
+.side>p {
+    position: relative;
+    left: -10px;
+}
+
+aside {
+    height: 100vh;
+    width: 100%;
+}
+
+#aside1 {
+    background-color: #282c35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/aside1.png) center no-repeat;
+    /* filter: brightness(.7); */
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.aside1Title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 35px;
+    align-content: center;
+}
+
+.aside1Context {
+    display: block;
+    width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.aside1Context>p {
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.box {
+    margin-top: 100px;
+    box-sizing: border-box;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+ul {
+    list-style: none;
 }
