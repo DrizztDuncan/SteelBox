@@ -116,22 +116,32 @@
             <div id="sizeLightBox1" class="white title2">
                 <h2>STEEL BOX SIZES</h2>
             </div>
-            <h2 class="box3-1" onmouseover="anotherMouseOver1" onmouseout="anotherMouseOut1">
+            <h2 class="box3-1">
                 20' STANDARD
                 <div class="box3-1-2">
-
+                    <h3>20' Standard</h3>
+                    <p> Exterior Dimensions<br> Length: 20'<br> Width: 8'<br> Height: 8' 6"<br> Interior Dimensions<br>
+                        Length: 19' 3"<br> Width: 7' 8" – 1/8"<br> Height: 7' 9" – 5/8"<br> Tare Weight: 5,050 lbs.<br>
+                        Cubic Capacity: 1,256 sqft</p>
                 </div>
             </h2>
             <h2 id="sizeLightBox2" class="box3-2">
                 40' STANDARD
                 <div class="box3-2-2">
-
+                    <h3>40' Standard</h3>
+                    <p> Exterior Dimensions<br> Length: 40'<br> Width: 8'<br> Height: 8' 6"<br> Interior Dimensions<br>
+                        Length: 39' – 3/8"<br> Width: 7' 8" – 1/8"<br> Height: 7' 9" – 5/8"<br> Tare Weight: 8,000
+                        lbs.<br> Cubic Capacity: 2,547 sqft</p>
                 </div>
             </h2>
             <h2 id="sizeLightBox3" class="box3-3">
                 40' HIGH CUBE
                 <div class="box3-3-2">
-
+                    <h3>40' HIGH CUBE</h3>
+                    <p> Exterior Dimensions <br>Length: 40' <br>Width: 8' <br>Height: 9' 6" <br>Interior Dimensions
+                        <br>Length: 39' – 3/8"<br>
+                        Width: 7' 8" – 1/8" <br>Height: 8' 10" <br>Tare Weight: 8,775 lbs. <br>Cubic Capacity: 2,685
+                        sqft</p>
                 </div>
             </h2>
         </div>
@@ -140,7 +150,7 @@
         <div class="container4">
 
             <div class="content4">
-                <h3><i class="fa fa-child"></i>CUSTOMER PICK UP</h3>
+                <h3><i class="fa fa-child grey"></i>CUSTOMER PICK UP</h3>
                 <p>
                     Customer has a truck & trailer that allows them to pick up their box from the depot
                     on their own and will not be charged for delivery. A representative from our Corporate Office will
@@ -150,7 +160,7 @@
 
             </div>
             <div class="content4">
-                <h3><i class="fa fa-anchor"></i>CUSTOMER UNLOAD</h3>
+                <h3><i class="fa fa-anchor grey"></i>CUSTOMER UNLOAD</h3>
                 <p>
                     Our experienced Logistics Team will set up a driver with a 4×4 truck and 40’ Hotshot trailer to pick
                     up
@@ -167,8 +177,7 @@
 
             </div>
             <div class="content4">
-                <h3><i class="fa fa-truck"></i>
-                    ROLL-OFF DELIVERY</h3>
+                <h3><i class="fa fa-truck grey"></i>ROLL-OFF DELIVERY</h3>
                 <p>
                     Our experienced Logistics Team will set up a driver with a Roll-off trailer to pick up the box and
                     deliver it to your property. The Roll-off trailer is required if the customer does not have the
@@ -195,6 +204,8 @@
                 </p>
             </h1>
             <div class="white content5">
+                <i class="fa fa-truck grey"></i>
+                <br>
                 Delivery and Pick-up <br>Charges Not Included
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
@@ -205,6 +216,9 @@
                 </div>
             </div>
             <div class="white content5">
+
+                <i class="fa fa-check-circle grey"></i>
+                <br>
                 Reasonable Wear and Tear <br>Allowed
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
@@ -215,6 +229,9 @@
                 </div>
             </div>
             <div class="white content5">
+
+                <i class="fa fa-ship grey"></i>
+                <br>
                 KEEP IN MIND: Used Boxes <br>Have Rust
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
@@ -256,23 +273,50 @@
                     </div>
 
                     <div class="s6boxbox">
-                        <label for="">Box Condition</label>
-                        <input type="text" class="s6input1">
+                        <label for="">Box Condition<i class="fa fa-question-circle white"></i></label>
+                        <select class="s6input1">
+                            <option value=""></option>
+                            <option value="">New</option>
+                            <option value="">Used</option>
+                        </select>
                     </div>
 
                 </li>
                 <li>
                     <div class="s6boxbox">
-                        <label for="">Box Size</label>
-                        <input type="text" class="s6input3">
+                        <label for="">Box Size<i class="fa fa-question-circle white"></i></label>
+                        <select class="s6input3">
+                            <option value=""></option>
+                            <option value="">20' Standard</option>
+                            <option value="">40' Standard</option>
+                            <option value="">40' High Cube</option>
+                        </select>
                     </div>
                     <div class="s6boxbox">
                         <label for="">Quantity</label>
-                        <input type="text" class="s6input3">
+
+                        <select value="" class="s6input3">
+                            <option value=""></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10+</option>
+                        </select>
                     </div>
                     <div class="s6boxbox">
-                        <label for="">Delivery</label>
-                        <input type="text" class="s6input3">
+                        <label for="">Delivery<i class="fa fa-question-circle white"></i></label>
+                        <select class="s6input3">
+                            <option value=""></option>
+                            <option value="">Custom Pickup</option>
+                            <option value="">Custom Unload</option>
+                            <option value="">Roll Off Delivery</option>
+                        </select>
                     </div>
                 </li>
                 <li class="s6buttonbox"><button>GET QUOTE</button></li>
