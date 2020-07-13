@@ -360,6 +360,18 @@
         var hide = document.getElementById("lightBox2");
         hide.style.display = 'none';
     }
+
+    const bar = document.querySelector('nav');
+    window.onscroll = function () {
+        console.log(bar);
+        var top = window.scrollY;
+        console.log(top);
+        if (top >= 1080) {
+            bar.classList.add('active')
+        } else {
+            bar.classList.remove('active')
+        };
+    }
 </script>
 
 </html>

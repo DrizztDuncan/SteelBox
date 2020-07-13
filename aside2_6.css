@@ -359,6 +359,11 @@
     border-style: none;
     width: 8vw;
     height: 5vh;
+    cursor: pointer;
+}
+
+#aside6 button:hover {
+    background-color: grey;
 }
 
 .s6buttonbox {
@@ -395,6 +400,10 @@
     align-items: center;
     margin: 0 2%;
     cursor: pointer;
+}
+
+.sec6_2 li:hover {
+    background-color: grey;
 }
 
 .sec6_2 i {
