@@ -48,6 +48,18 @@ main {
     left: -10px;
 }
 
+@media screen and (max-width: 1600px) {
+    main {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .side {
+        font-size: 120px;
+    }
+}
+
 aside {
     height: 100vh;
     width: 100%;
@@ -116,4 +128,16 @@ h3 {
 
 ul {
     list-style: none;
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 60px;
+    }
 }

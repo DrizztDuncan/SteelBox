@@ -363,10 +363,8 @@
 
     const bar = document.querySelector('nav');
     window.onscroll = function () {
-        console.log(bar);
         var top = window.scrollY;
-        console.log(top);
-        if (top >= 1080) {
+        if (top >= 780) {
             bar.classList.add('active')
         } else {
             bar.classList.remove('active')
