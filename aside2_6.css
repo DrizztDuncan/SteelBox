@@ -281,7 +281,7 @@
 
 .topic5 {
     width: 80vw;
-    margin: 5vh auto 10vh;
+    margin: 2vh auto;
 }
 
 #aside5 .container3 .white p {
@@ -315,6 +315,13 @@
     font-weight: 500;
     margin: 2vh 2vw;
     line-height: 20px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1380px) {
+    .content5 {
+        margin-top: 2vh;
+    }
 
 }
 
