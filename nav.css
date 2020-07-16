@@ -40,7 +40,7 @@ nav li:hover {
     height: 10vh;
     width: 100%;
     color: black;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .7);
     position: fixed;
     top: 0;
     display: flex;
@@ -50,21 +50,10 @@ nav li:hover {
     transition: 2s;
 }
 
-/* #menu {
-    display: none;
-} */
-
 nav figure img {
     max-width: 6vw;
     height: auto;
 }
-
-/* .menuList {
-    background-color: rgba(255, 255, 255, .8);
-    transition: 2s;
-    display: none;
-} */
-
 
 .showFlex {
     display: flex;
@@ -83,7 +72,7 @@ nav figure img {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: none;
     font-size: 40px;
 }
 
