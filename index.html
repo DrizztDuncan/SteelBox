@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="aside2_6.css">
+    <link rel="stylesheet" href="rwd.css">
     <script src="https://use.fontawesome.com/8947e28c7f.js"></script>
 
 </head>
@@ -26,6 +27,32 @@
             <li>GUARANTEE</li>
             <li>QUOTE</li>
         </ul>
+        <div class="dropdown" onclick="myFunction()">
+            <i class="fa fa-bars black dropbtn" aria-hidden="true"></i>
+            <!-- <button class="dropbtn">Dropdown</button> -->
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#newUsed">NEW/USED</a>
+                <a href="#boxSizes">BOX SIZES</a>
+                <a href="#deliveryOptions">DELIVERY OPTIONS</a>
+                <a href="#guarantee">GUARANTEE</a>
+                <a href="#quote">QUOTE</a>
+            </div>
+        </div>
+
+        <!-- <div id="menu" onclick="menuShow()">
+            <i class="fa fa-bars black" aria-hidden="true"></i>
+            <div class="menuList">
+                <div>HOME</div>
+                <div>ABOUT US</div>
+                <div>NEW/USED</div>
+                <div>BOX SIZES</div>
+                <div>DELIVERY OPTIONS</div>
+                <div></div>
+                <div>QUOTE</div>
+            </div>
+        </div> -->
     </nav>
     <main>
         <div></div>
@@ -34,9 +61,7 @@
         </div>
     </main>
     <aside id="aside1">
-        <div id="aside1"></div>
         <div class="container1">
-
             <div class="aside1Title">
                 <h1 class="white">ABOUT</h1>
                 <h2 class="grey">STEEL BOX CO</h2>
@@ -204,9 +229,14 @@
                 </p>
             </h1>
             <div class="white content5">
-                <i class="fa fa-truck grey"></i>
-                <br>
-                Delivery and Pick-up <br>Charges Not Included
+                <div class="subTitle5">
+                    <i class="fa fa-truck grey"></i>
+                    <div>
+                        <p>Delivery and Pick-up </p>
+                        <p>Charges Not Included</p>
+                    </div>
+                </div>
+
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
                     our 30-Day, or 1-Year Money Back Guarantee, we allow for the exchange, return or refund of your
@@ -216,10 +246,14 @@
                 </div>
             </div>
             <div class="white content5">
+                <div class="subTitle5">
+                    <i class="fa fa-check-circle grey"></i>
+                    <div>
+                        <p>Reasonable Wear and Tear </p>
+                        <p>Allowed</p>
+                    </div>
+                </div>
 
-                <i class="fa fa-check-circle grey"></i>
-                <br>
-                Reasonable Wear and Tear <br>Allowed
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
                     our 30-Day, or 1-Year Money Back Guarantee, we allow for the exchange, return or refund of your
@@ -229,10 +263,13 @@
                 </div>
             </div>
             <div class="white content5">
-
-                <i class="fa fa-ship grey"></i>
-                <br>
-                KEEP IN MIND: Used Boxes <br>Have Rust
+                <div class="subTitle5">
+                    <i class="fa fa-ship grey"></i>
+                    <div>
+                        <p>KEEP IN MIND:</p>
+                        <p>Used Boxes Have Rust</p>
+                    </div>
+                </div>
                 <div class="content51">
                     We understand that box condition expectations may differ from one customer to another. As part of
                     our 30-Day, or 1-Year Money Back Guarantee, we allow for the exchange, return or refund of your
@@ -338,6 +375,23 @@
     </aside>
 </body>
 <script>
+    //  nav
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // window.onclick = function () {
+    //     if (!event.target.matches('.dropbtn')) {
+    //         var dropdowns = document.getElementsByClassName("dropdown-content");
+    //         var i;
+    //         for (i = 0; i < dropdowns.length; i++) {
+    //             var openDropdown = dropdowns[i];
+    //             if (openDropdown.classList.add('show')) {
+    //                 openDropdown.classList.remove('show');
+    //             }
+    //         }
+    //     }
+    // }
+
     // section2 lightbox
     function mouseOver1() {
         var show = document.getElementById("lightBox1");
@@ -362,12 +416,15 @@
     }
 
     const bar = document.querySelector('nav');
+    const list = document.querySelector('.menuList');
     window.onscroll = function () {
         var top = window.scrollY;
         if (top >= 780) {
             bar.classList.add('active')
+            list.classList.add('listGo')
         } else {
             bar.classList.remove('active')
+            list.classList.remove('listGo')
         };
     }
 </script>

@@ -85,17 +85,6 @@
     border-top: 3px solid white;
 }
 
-@media screen and (max-width: 1600px) {
-    .c3_subTitle:hover {
-        padding-top: 2vh;
-        font-size: 40px;
-    }
-
-    .lightBoxShow {
-        font-size: 14px;
-    }
-}
-
 #aside3 {
     display: flex;
     justify-content: center;
@@ -114,38 +103,22 @@
 }
 
 .box3-1 {
-    width: 26vw;
-    height: 35vh;
     background: url(./img/box3_1.jpg) no-repeat center;
-    background-size: cover;
-    margin: 5vh .5vw auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 5vh;
-    overflow: hidden;
-    position: relative;
 }
 
 .box3-2 {
-    width: 26vw;
-    height: 35vh;
     background: url(./img/box3_2.jpg) no-repeat center;
-    background-size: cover;
-    margin: 5vh .5vw auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 5vh;
-    overflow: hidden;
-    position: relative;
-
 }
 
 .box3-3 {
+    background: url(./img/box3_3.jpg) no-repeat center;
+}
+
+.box3-1,
+.box3-2,
+.box3-3 {
     width: 26vw;
     height: 35vh;
-    background: url(./img/box3_3.jpg) no-repeat center;
     background-size: cover;
     margin: 5vh .5vw auto;
     display: flex;
@@ -155,6 +128,8 @@
     overflow: hidden;
     position: relative;
 }
+
+
 
 .box3-1-2 {
     background: url(./img/box3_1_2.png) no-repeat center;
@@ -258,17 +233,7 @@
     color: grey;
 }
 
-@media screen and (max-width: 1820px) {
-    .content4 p {
-        font-size: 12px;
-    }
 
-    .content4 h3 {
-        line-height: 50px;
-        font-size: 30px;
-        text-align: center;
-    }
-}
 
 #aside5 {
     display: flex;
@@ -302,6 +267,8 @@
     text-align: center;
     font-weight: bolder;
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .content5 i {
@@ -318,12 +285,6 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 1380px) {
-    .content5 {
-        margin-top: 2vh;
-    }
-
-}
 
 #aside6 {
     display: flex;
