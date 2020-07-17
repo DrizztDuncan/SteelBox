@@ -25,6 +25,10 @@ nav figure img {
     height: auto;
 }
 
+#navIcon1 {
+    display: none;
+}
+
 nav li {
     margin: auto 2vh;
     font-size: 1.5rem;
@@ -60,14 +64,14 @@ nav figure img {
 }
 
 .dropbtn {
-    color: black;
+    color: white;
     border: none;
     cursor: pointer;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-    color: white;
+    color: grey;
 }
 
 .dropdown {

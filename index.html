@@ -16,8 +16,11 @@
 
 <body>
     <nav>
-        <figure href="">
+        <figure id="navIcon1">
             <img src="./img/SteelBoxCo.svg" alt="">
+        </figure>
+        <figure id="navIcon2">
+            <img src="./img/SteelBoxCo.png" alt="">
         </figure>
         <ul>
             <li>HOME</li>
@@ -30,8 +33,7 @@
         </ul>
         <div class="dropdown" onclick="myFunction()">
             <i class="fa fa-bars black dropbtn" aria-hidden="true"></i>
-            <!-- <button class="dropbtn">Dropdown</button> -->
-            <div id="myDropdown" class="dropdown-content">
+            <div id="myDropdown" class="dropdown-content menuList">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT US</a>
                 <a href="#newUsed">NEW/USED</a>
@@ -393,14 +395,24 @@
 
     const bar = document.querySelector('nav');
     const list = document.querySelector('.menuList');
+    const burger = document.querySelector('.dropbtn');
+    const icon1 = document.querySelector('#navIcon1');
+    const icon2 = document.querySelector('#navIcon2');
+
     window.onscroll = function () {
         var top = window.scrollY;
         if (top >= 780) {
-            bar.classList.add('active')
-            list.classList.add('listGo')
+            bar.classList.add('active');
+            list.classList.add('listGo');
+            burger.style.color = 'black';
+            icon1.style.display = "block";
+            icon2.style.display = "none";
         } else {
-            bar.classList.remove('active')
-            list.classList.remove('listGo')
+            bar.classList.remove('active');
+            list.classList.remove('listGo');
+            burger.style.color = 'white';
+            icon1.style.display = "none";
+            icon2.style.display = "block";
         };
     }
 </script>
