@@ -26,6 +26,10 @@
 
 @media screen and (max-width: 1200px) {
 
+    main {
+        grid-template-columns: 50% 50%;
+    }
+
     .side {
         font-size: 120px;
     }
@@ -47,8 +51,54 @@
         max-width: 80%;
     }
 
+    .aside1Title {
+        margin: auto;
+    }
+
+    .aside1Context {
+        margin: auto;
+    }
+
     .content5 {
         margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .box3-1-2,
+    .box3-2-2,
+    .box3-3-2 {
+        padding: 20px;
+    }
+
+    .content4 {
+        margin: auto 2vw;
+    }
+
+    .content5 {
+        width: 30vw;
+    }
+
+    .sec6ul {
+        width: 40vw;
+    }
+
+    .sec6_2 {
+        height: 25vh;
+        width: 30vw;
+    }
+
+    .s6input1 {
+        width: 18vw;
+    }
+
+    .s6input2 {
+        width: 37vw;
+    }
+
+    .s6input3 {
+        width: 11vw;
     }
 }
 
@@ -196,6 +246,7 @@
         width: 60vw;
         height: 20vh;
         padding: 0;
+        font-size: 12px;
     }
 
     h3 {
@@ -252,6 +303,10 @@
         height: 25vh;
         width: 60vw;
         margin-top: 5vh;
+    }
+
+    .sec6_2 ul {
+        width: 60vw;
     }
 }
 
