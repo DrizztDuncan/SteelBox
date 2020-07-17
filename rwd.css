@@ -329,3 +329,33 @@
     }
 
 }
+
+/* Y */
+
+@media screen and (height: 600px) {
+
+    .context2,
+    .context3 {
+        width: 35vw;
+        margin: auto;
+    }
+
+
+    .box3-1-2,
+    .box3-2-2,
+    .box3-3-2 {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .content4 {
+        height: 60vh;
+        width: 30vw;
+        margin: auto;
+    }
+
+    .content5 {
+        width: 25vw;
+        margin: 0;
+    }
+}
