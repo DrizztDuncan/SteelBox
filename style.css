@@ -97,7 +97,7 @@ h3 {
 
 .aside1Context {
     display: block;
-    width: 300px;
+    width: 25vw;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
