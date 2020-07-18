@@ -332,7 +332,7 @@
 
 
 
-@media screen and (width: 414px) {
+@media screen and (max-width: 414px) {
     h1 {
         font-size: 40px;
     }
@@ -414,7 +414,7 @@
     }
 }
 
-@media screen and (width: 411px) {
+@media screen and (max-width: 411px) {
     h1 {
         font-size: 40px;
     }
@@ -496,7 +496,7 @@
     }
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
     h1 {
         font-size: 40px;
     }

@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
 main {
     height: 100vh;
     background-image: url(./img/heroImg.jpg);
-    mix-blend-mode: exclusion;
     display: grid;
     grid-template-columns: 70% 30%;
     filter: brightness(.7);
