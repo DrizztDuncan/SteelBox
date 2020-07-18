@@ -329,6 +329,7 @@
     height: 30px;
     border: 0;
     -webkit-appearance: none;
+    background-color: white;
 }
 
 .s6input1 {
@@ -351,9 +352,11 @@
     width: 8vw;
     height: 5vh;
     cursor: pointer;
+    border: .5px ridge white;
 }
 
-#aside6 button:hover {
+#aside6 button:hover,
+#aside6 button:focus {
     background-color: grey;
 }
 
