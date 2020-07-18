@@ -177,6 +177,7 @@
 
     .side p {
         position: 0;
+        left: 0;
     }
 
     nav ul {
